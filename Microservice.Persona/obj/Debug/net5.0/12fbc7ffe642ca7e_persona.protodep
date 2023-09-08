@@ -1,0 +1,2 @@
+obj\Debug\net5.0\Protos/Persona.cs \
+obj\Debug\net5.0\Protos/PersonaGrpc.cs: Protos/persona.proto

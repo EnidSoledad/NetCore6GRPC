@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+option csharp_namespace = "Microservice.Persona.Protos";
+
+	message PersonaModel{
+		int32 personaId = 1;
+		string nombre = 2;
+		string apellido = 3;
+		string direccion = 4;
+		string telefono = 5;
+		string email = 6;
+	}
+
+	message personaRequest {
+		string email = 1;
+	}
+
+	message personaResponse {
+		PersonaModel persona = 1;
+	}
+
+	service PersonaProtoService{
+		rpc GetPersona(personaRequest) returns (personaResponse);
+	}

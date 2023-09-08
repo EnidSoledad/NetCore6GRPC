@@ -1,0 +1,2 @@
+obj\Debug\net5.0/Persona.cs \
+obj\Debug\net5.0/PersonaGrpc.cs: ../Microservice.Persona/Protos/persona.proto
